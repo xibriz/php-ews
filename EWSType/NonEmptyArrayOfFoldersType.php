@@ -1,46 +1,55 @@
 <?php
 /**
- * Definition of the NonEmptyArrayOfFoldersType type
- *
- * @package php-ews
- * @subpackage Types
+ * Contains EWSType_NonEmptyArrayOfFoldersType.
  */
 
 /**
- * Definition of the NonEmptyArrayOfFoldersType type
+ * Represents an array of folders that are used in folder operations.
+ *
+ * @package php-ews\Types
  */
 class EWSType_NonEmptyArrayOfFoldersType extends EWSType
 {
     /**
-     * Folder property
+     * Identifies a folder to create, get, find, synchronize, or update.
+     *
+     * @since Exchange 2007
      *
      * @var EWSType_FolderType
      */
     public $Folder;
 
     /**
-     * CalendarFolder property
+     * Represents a folder that primarily contains calendar items.
+     *
+     * @since Exchange 2007
      *
      * @var EWSType_CalendarFolderType
      */
     public $CalendarFolder;
 
     /**
-     * ContactsFolder property
+     * Represents a Contacts folder in a mailbox.
+     *
+     * @since Exchange 2007
      *
      * @var EWSType_ContactsFolderType
      */
     public $ContactsFolder;
 
     /**
-     * SearchFolder property
+     * Represents a Search folder contained in a mailbox.
+     *
+     * @since Exchange 2007
      *
      * @var EWSType_SearchFolderType
      */
     public $SearchFolder;
 
     /**
-     * TasksFolder property
+     * Represents a Tasks folder in a mailbox.
+     *
+     * @since Exchange 2007
      *
      * @var EWSType_TasksFolderType
      */
